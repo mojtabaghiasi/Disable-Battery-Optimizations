@@ -203,7 +203,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
 
     private void showManBatteryOptimizationDisabler(boolean isRequestNativeBatteryOptimizationDisabler) {
         BatteryOptimizationUtil.showBatteryOptimizationDialog(
-                mActivity.this,
+                mContext,
                 KillerManager.Actions.ACTION_POWERSAVING,
                 manBatteryTitle,
                 manBatteryMessage,
